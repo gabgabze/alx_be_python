@@ -1,7 +1,7 @@
 #initialize the interest varibles
-principle = 1000
-rate = 0.05
-time = 3
-Interest = principle * rate * time
+P = 1000
+R = 0.05
+T = 3
+Interest = P * R * T
 
 print("The simple interest is", Interest)
