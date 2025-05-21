@@ -1,7 +1,7 @@
 #initialize the interest varibles
-p = 1000
-r = 5/100
-t = 3
-I = p * r * t
+principle = 1000
+rate = 5/100
+time = 3
+Interest = principle * rate * time
 
-print(I)
+print(Interest)
