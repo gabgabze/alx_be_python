@@ -1,6 +1,6 @@
 #initialize the interest varibles
-p= 1000
-r = 5/100
+p= int(1000)
+r = float(0.05)
 t = 3
 Interest = (p * r * t)
 
