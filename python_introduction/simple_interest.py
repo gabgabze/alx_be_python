@@ -1,7 +1,7 @@
 #initialize the interest varibles
-principle = 1000
-rate = 0.05
-time = 3
-interest = (principle * rate * time)
+p= 1000
+r = 5/100
+t = 3
+Interest = (p * r * t)
 
-print("The simple interest is:",interest)
+print("The simple interest is:",Interest)
