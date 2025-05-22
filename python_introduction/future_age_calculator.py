@@ -3,7 +3,7 @@ future_year = 2050
 
 gap_year = future_year -  current_year
 
-userAge = int(input('what is your age? '))
+userAge = int(input('How old are you? '))
 
 futureAge = userAge + gap_year
 
