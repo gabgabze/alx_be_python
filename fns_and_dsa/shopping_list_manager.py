@@ -30,7 +30,7 @@ def main():
         elif choice == '3':
             print("\nCurrent Shopping List:")
             if shopping_list:
-                for index, value in enumerate(shopping_list, start=1):
+                for index, value in enumerate(shopping_list,start=1): # to start indexing from 1 but not zero
                     print(f"{index}. {value}")
             else:
                 print("List is empty.")
