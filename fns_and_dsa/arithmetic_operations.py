@@ -1,4 +1,4 @@
-def perform_operations(num1,num2,operation):
+def perform_operation(num1,num2,operation):
     number1 = float(num1)
     number2 = float(num2)
     operation = str(operation)
