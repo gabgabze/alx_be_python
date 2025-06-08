@@ -15,7 +15,7 @@ def main():
         choice = input("Enter your choice (1-4): ").strip()
 
         if choice == '1':
-            item = input("Add item: ").strip()
+            item = input("Enter the item to add: ").strip()
             shopping_list.append(item)
             print(f"'{item}' has been added.")
 
