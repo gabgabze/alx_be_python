@@ -1,11 +1,10 @@
 class Book:
-    """public attributes"""
-    title = ""
-    author = ""
 
     """create instance with private attribute"""
-    def __init__(self, is_checked_out):
+    def __init__(self,title,author, is_checked_out):
         self.is_checked_out = is_checked_out
+        self.title = title
+        self.author = author
 
 """implement library class"""
 class Library:
