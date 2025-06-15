@@ -5,13 +5,16 @@ class Book:
         self._is_checked_out = True # this underscore shows it is private
 
 """implement library class"""
-class Library(Book):
+class Library:
     def __init__(self, _books):
+        self.author = None
+        self.title = None
         self._books = [self.title,self.author]
 
     """add methods for this operation"""
     def add_book(self, _books):
-        self._books.append(_books)
+        books_in_store = self._books.append(_books)
+        return books_in_store
 
     def checkout_book(self, title):
         for book in self._books:
