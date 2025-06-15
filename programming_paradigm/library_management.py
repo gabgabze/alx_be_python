@@ -1,5 +1,5 @@
 class Book:
-    def __init__(self,title,author,_is_checked_out):
+    def __init__(self,title,author,_is_checked_out=False):
         self.title=title     # public attribute
         self.author=author   # public attribute
         self._is_checked_out = _is_checked_out # this underscore shows it is private
