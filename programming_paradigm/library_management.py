@@ -25,9 +25,12 @@ class Library:
         for book in self._books:
             if book.title == title and isinstance(book,Book):
                 return book
-            
+
 
     def list_available_books(self):
-        return not self._books
+        for book in self._books:
+            if not book._is_checked_out:
+                return 
+
 
 
