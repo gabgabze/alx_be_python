@@ -12,9 +12,9 @@ class Library:
         self._books = books
 
     """add methods for this operation"""
-    def add_book(self, _books):
-        books_in_store = self._books.append(_books)
-        return books_in_store
+    def add_book(self,book):
+        self.books.append(book)
+        return f'Book "{book.title}" added to the library.'
 
     def checkout_book(self, title):
         for book in self._books:
@@ -25,6 +25,7 @@ class Library:
         for book in self._books:
             if book.title == title and isinstance(book,Book):
                 return book
+            
 
     def list_available_books(self):
         return not self._books
