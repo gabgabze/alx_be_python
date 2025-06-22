@@ -6,7 +6,7 @@ class Book:
         self.year = year
 
     def __str__(self):
-        return self.title
+        return f"Book({self.title} by {self.author}published in {self.year})"
 
     def __repr__(self):
         return f"Book('{self.title}', '{self.author}', {self.year})"
