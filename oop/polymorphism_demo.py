@@ -1,19 +1,23 @@
+import math
 class Shape:
 
-    @staticmethod
     def area(self):
-        return NotImplementedError
+        raise NotImplementedError
 
 class Rectangle(Shape):
     def __init__(self, width, height):
         self.width = width
         self.height = height
-        self.area = self.width * self.height
+
+    """override the area method"""
+    def area(self):
+        return self.width * self.height
+
 
 class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius
-        self.area = self.radius * self.radius
 
-
-
+    """override the area method"""
+    def area(self):
+        return math.pi * self.radius ** 2
