@@ -5,13 +5,13 @@ class Shape:
         raise NotImplementedError
 
 class Rectangle(Shape):
-    def __init__(self, width, height):
-        self.width = width
-        self.height = height
+    def __init__(self, length, width):
+        self.length = length
+        self.height = width
 
     """override the area method"""
     def area(self):
-        return self.width * self.height
+        return self.length * self.width
 
 
 class Circle(Shape):
