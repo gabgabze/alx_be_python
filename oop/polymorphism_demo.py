@@ -7,7 +7,7 @@ class Shape:
 class Rectangle(Shape):
     def __init__(self, length, width):
         self.length = length
-        self.height = width
+        self.width = width
 
     """override the area method"""
     def area(self):
