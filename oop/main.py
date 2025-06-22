@@ -1,6 +1,10 @@
+import math
 from library_system import Book, EBook, PrintBook, Library
+from class_static_methods_demo import Calculator
+from polymorphism_demo import Shape, Rectangle, Circle
 
-def main():
+
+"""def main():
     # Create a Library instance
     my_library = Library()
 
@@ -15,7 +19,17 @@ def main():
     my_library.add_book(paper_novel)
 
     # List all books in the library
-    my_library.list_books()
+    my_library.list_books()"""
+
+def main():
+    shapes = [
+        Rectangle(10, 5),
+        Circle(7)
+    ]
+
+    for shape in shapes:
+        print(f"The area of the {shape.__class__.__name__} is: {shape.area()}")
+
 
 if __name__ == "__main__":
     main()
