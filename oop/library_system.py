@@ -5,7 +5,7 @@ class Book:
         self.author = author
 
     def __str__(self):
-        return self.title, self.author
+        return f"Book: {self.title}, {self.author}"
 
 # create sub_classes Ebook and PrintBook that inherit from Book
 class EBook(Book):
@@ -14,7 +14,7 @@ class EBook(Book):
         self.file_size = file_size
 
     def __str__(self):
-        return f"{self.title}, {self.author},File Size: {self.file_size}"
+        return f"EBook: {self.title}, {self.author},File Size: {self.file_size}"
 
 class PrintBook(Book):
     def __init__(self, title, author, page_count):
@@ -22,7 +22,7 @@ class PrintBook(Book):
         self.page_count = page_count
 
     def __str__(self):
-        return f"{self.title},{self.author}, Page Count: {self.page_count}"
+        return f"PrintBook: {self.title},{self.author}, Page Count: {self.page_count}"
 
 # create a Library class that holds books
 class Library:
